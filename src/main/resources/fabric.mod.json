@@ -1,0 +1,47 @@
+{
+	"schemaVersion": 1,
+	"id": "sand",
+	"version": "${version}",
+
+	"name": "Grains of Sand",
+	"description": "Manipulate time!",
+	"authors": [
+		"BrianComics#8994"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+
+	"license": "MIT",
+	"icon": "assets/sand/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"briancomics.grains.of.sand.GrainsOfSandMain"
+		],
+		"cardinal-components": [
+			"briancomics.grains.of.sand.cca.MyComponents"
+		]
+	},
+	"mixins": [
+		"sand.mixins.json"
+	],
+
+	"depends": {
+		"fabricloader": ">=0.14.6",
+		"fabric": "*",
+		"minecraft": "~1.19",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+
+	"custom": {
+		"cardinal-components": [
+			"sand:time_component"
+		]
+	}
+}
